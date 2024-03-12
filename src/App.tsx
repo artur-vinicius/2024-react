@@ -1,6 +1,6 @@
 const MeuBotao = (props: any) => {
   return (
-    <button>(props.titulo)</button>
+    <button>{props.titulo}</button>
   )
 }
 
