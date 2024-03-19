@@ -10,12 +10,62 @@
 2. Criar conta no [vercel](vercel.com)
 
 ## Tarefas
+
+### Tarefas - 12/03
 1. Fork desse respositório para sua conta github. Assim posso acompanhar quem esta fazendo.
 2. No seu repositório, crie os arquivos abaixos
 3. No vercel, crie um novo projeto importando o seu repositório
 4. Siga as mudanças do [learn react](https://react.dev/learn) e acompanhe a cada _commit_ as modificações no vercel
 
+**Conteúdo**
+  - [Componentes react](https://react.dev/learn#components)
+  - [JSX](https://react.dev/learn#writing-markup-with-jsx)
+  - [css](https://react.dev/learn#adding-styles)
+  - [código js/ts no jsx](https://react.dev/learn#displaying-data)
+
+### Tarefas - 18/03
+1. Acesse seu reposiório *fork*
+2. Crie uma release com o nome **react-2024-03-12** para guardar suas tarefas anteriores do dia 12-03
+3. Abra o VS Code
+4. Clone o seu repositório *fork* para a máquina local
+5. Abra no VS Code a pasta na máquina local do repositório
+6. Instale as bibliotecas do projeto `npm install`
+7. Execute a aplicação na máquina local `npm run dev`
+8. Abra o navegador com o enderço (*url*) fornecida
+9. Siga as mudanças do [learn react](https://react.dev/learn) e acompanhe a cada modificação local
+10. Faça um *commit* e *push* para guardar as modificações e publica-las no repositório remoto
+11. Verificar se a mudança foi instalada no vercel
+12. Crie uma release com o nome **react-2024-03-18** para guardar suas tarefas anteriores do dia 18-03
+
+**Conteúdo**
+  - [código js/ts no jsx](https://react.dev/learn#displaying-data)
+  - [renderização condicional](https://react.dev/learn#conditional-rendering)
+  - [listas](https://react.dev/learn#rendering-lists)
+
+### Tarefas - 19/03
+1. Se ainda não criou, crie uma release com o nome **react-2024-03-18** para guardar suas tarefas anteriores do dia 18-03
+2. Clone ou atualize seu repositório local do remoto (github)
+3. Execute a aplicação na máquina local `npm run dev`
+4. Adicione componente para adicionar tarefa (input text e input button)
+5. Adicione função para escutar clique do botão e fazer um _output_ no log
+6. Modifique a função de escuta para adicionar tarefa a lista de tarefas e observe a UI que não muda
+7. Transforme o input de text (tarefa) em estado
+8. DESAFIO continuar transformando a lista em estado
+9. Crie uma release com o nome **react-2024-03-19** para guardar suas tarefas anteriores do dia 19-03
+**Conteúdo**
+  - [respondendo a eventos](https://react.dev/learn#responding-to-events)
+  - [estado](https://react.dev/learn#updating-the-screen)
+
+
+### Tarefas - 25/03
+
+**Conteúdo**
+  - [compartilhando dados entre componentes](https://react.dev/learn#sharing-data-between-components)
+  
+
 ## Links
+- nodejs
+  - node version manager [nvm](https://github.com/nvm-sh/nvm) para instalar `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
 - React
   - [react.dev](https://react.dev/)
   - [learn react](https://react.dev/learn)
