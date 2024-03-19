@@ -14,7 +14,7 @@ const ListaDeTarefas = (props: any) => {
       <h4>Tarefas como lista de objetos</h4>
       <ul>
         {
-          props.dados.map((item) => {
+          props.dados.map((item: any) => {
             return <ItemTarefa key={item.id} titulo={item.titulo} />
           })
         }
