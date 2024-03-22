@@ -41,7 +41,7 @@ const App = () => {
       },
     ]);
 
-    const escutarCliqueBotao = (evento: any) => {
+    const escutarCliqueBotao = () => {
       console.log("clicou");
       console.info(tarefa);
       const objeto = {
