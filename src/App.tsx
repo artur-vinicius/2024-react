@@ -1,12 +1,5 @@
+import { useState } from "react";
 import "./App.css";
-
-const MeuBotao = (props: any) => {
-  return <button>{props.titulo}</button>;
-}
-
-const Usuario = (props: any) => {
-  return (<h3>{props.nome}</h3>);
-}
 
 const ListaDeTarefas = (props: any) => {
   return (
@@ -28,12 +21,8 @@ const ItemTarefa = (props: any) => {
 }
 
 const App = () => {
-    const usuario = { nome: "minora" };
-    const tarefas = [
-      "Minha tarefa inicial",
-      "Segunda tarefa do dia"
-    ];
-  
+    const [tarefa, setTarefa] = useState("digite uma tarefa");
+
     const tarefasMundoReal = [
       {
         id: 1,
@@ -50,29 +39,36 @@ const App = () => {
         titulo: "aprender sobre autenticação",
         concluido: false,
       },
-    ];
+    ]);
+
+    const escutarCliqueBotao = (evento: any) => {
+      console.log("clicou");
+      console.info(tarefa);
+      const objeto = {
+        id: tarefas.length + 1,
+        titulo: tarefa,
+        concluido: false,
+      }
+      console.info(objeto);
+      // tarefas.push(objeto);
+      setTarefas([
+        ...tarefas,
+        objeto
+      ]);
+    }
+    const escutarModificacaoTexto = (evento: any) => {
+      setTarefa(evento.target.value);
+    }
   
     return (
       <div className="aplicacao">
         <h1>Infoweb - React</h1>
-        {
-          usuario ?
-            (<Usuario nome={usuario.nome} />) :
-            (<MeuBotao titulo="Login" />)
-        }
-  
-        {
-          !usuario && (<MeuBotao titulo="Login" />)
-        }
-        <h4>Tarefas como lista de string</h4>
-        <ul>
-          {
-            tarefas.map((item, indice) => {
-              return (<li key={indice}>{item}</li>)
-            })
-          }
-        </ul>
-        <ListaDeTarefas dados={tarefasMundoReal}/>
+        <div>
+        <label htmlFor="tarefa">Informe a nova tarefa: </label>
+        <input type="text" id="tarefa" value={tarefa} onChange={escutarModificacaoTexto} />
+        <button onClick={escutarCliqueBotao}>Criar nova tarefa</button>
+      </div>
+      <ListaDeTarefas dados={tarefas}/>
       </div>
     );
   }
